@@ -56,10 +56,21 @@ textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0 24px;
-  background: lightgray;
+  background: rgb(238, 238, 238);
   border: none;
   border-radius: 4px;
   }
+
+input:required:focus {
+  border: rgba(255, 99, 71,.5) 2px solid;
+}
+
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 12px 20px;
+}
 
 input::placeholder {
   font-size: .95em;
@@ -144,12 +155,5 @@ button:hover {
     display: flex;
     flex-direction: column-reverse;
   }
-
-  label{ 
-    display: inline;
-  }
-
-
-
 
 }
