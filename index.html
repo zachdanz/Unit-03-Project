@@ -17,9 +17,9 @@
 
         <form action="index.html" method="post">
           
-          <fieldset>
+          <fieldset id="user-info">
   
-            <legend>Contact Information</legend>
+            <legend id="contact">Contact Information</legend>
             
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="user_name">
@@ -96,19 +96,18 @@
                 <option value="UM">United States Minor Outlying Islands</option>
                 <option value="VI">Virgin Islands</option>
               </optgroup>
-            </select>				
+            </select><br>			
             
             <label for="zipcode">Zip Code:</label>
             <input type="zip" id="zipcode" name="user_zipcode">
 
-          </fieldset>
-         
-          <fieldset>
-        
-  
-            <legend>Newsletter</legend>
+          </fieldset>  <!-- User info  -->
+
+          <fieldset id="newsletter_info">
+
+            <legend id="newsletter">Newsletter</legend>
             
-            <label>Select the newsletters you would like to recieve</label>
+            <label>Select the newsletters you would like to recieve</label><br>
               <input type="checkbox" id="html" value="newsletter_html" name="user_newsletter"><label>HTML News</label><br>
               <input type="checkbox" id="css" value="newsletter_css" name="user_newsletter"><label>CSS News</label><br>
               <input type="checkbox" id="java" value="newsletter_java" name="user_newsletter"><label>Javascript News</label><br>
@@ -122,14 +121,14 @@
             <label for="other_interests">Other topics you'd like to hear about</label>
             <textarea id="other_interests" name="user_interests"></textarea>
             
-          </fieldset>
+          </fieldset> <!-- Newsletter info  -->
           
           <button type="submit">Sign up</button>
         </form>
 
 
     <footer>
-        <p class="copyright">Copyright the Code Review</p>
+        <p id="copyright">Copyright the Code Review</p>
     </footer>
 
     </body>
