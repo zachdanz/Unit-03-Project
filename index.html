@@ -2,6 +2,7 @@
 <html lang=“en”>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
     <title>Subscribe to our Newsletter!</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
@@ -9,133 +10,131 @@
   </head>
 
   <body>
-  
-    <body>
-        <header>
-        <h1>The Code Review</h1>
-      </header>
+    <header>
+      <h1>The Code Review</h1>
+    </header>
 
-      <div class="form">
-        <h2>Signup for our newsletter</h2>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
+    <div class="form">
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your inbox</p>
 
-        <form action="index.html" method="post">
+      <form action="index.html" method="post">
+        
+        <fieldset id="user-info">
+
+          <legend id="contact">Contact Information</legend>
           
-          <fieldset id="user-info">
-  
-            <legend id="contact">Contact Information</legend>
-            
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="user_name" placeholder="Required" required>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="user_name" placeholder="Required" required>
+        
+          <label for="email">Email</label>
+          <input type="email" id="email" name="user_email" placeholder="Required" required>
+        
+          <label for="tel">Phone Number</label>
+          <input type="tel" id="tel" name="user_tel">    
           
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="user_email" placeholder="Required" required>
+          <label for="address">Street Address</label>
+          <input type="text" id="address" name="user_address">
+
+          <label for="state">State:</label>
+          <select id="state" name="user_state">
+            <optgroup label="US States">
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District Of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+              <option value="AS">American Samoa</option>
+            </optgroup>
+            <optgroup label="US Outlying Territories">
+              <option value="GU">Guam</option>
+              <option value="MP">Northern Mariana Islands</option>
+              <option value="PR">Puerto Rico</option>
+              <option value="UM">United States Minor Outlying Islands</option>
+              <option value="VI">Virgin Islands</option>
+            </optgroup>
+          </select><br>			
           
-            <label for="tel">Phone Number:</label>
-            <input type="tel" id="tel" name="user_tel">    
-            
-            <label for="address">Street Address:</label>
-            <input type="address" id="address" name="user_address">
+          <label for="zipcode">Zip Code</label>
+          <input type="text" id="zipcode" name="user_zipcode">
 
-            <label for="state">State:</label>
-            <select id="state" name="user_state" placeholder="Choose State">
-              <optgroup label="US States">
-                <option value="AL">Alabama</option>
-                <option value="AK">Alaska</option>
-                <option value="AZ">Arizona</option>
-                <option value="AR">Arkansas</option>
-                <option value="CA">California</option>
-                <option value="CO">Colorado</option>
-                <option value="CT">Connecticut</option>
-                <option value="DE">Delaware</option>
-                <option value="DC">District Of Columbia</option>
-                <option value="FL">Florida</option>
-                <option value="GA">Georgia</option>
-                <option value="HI">Hawaii</option>
-                <option value="ID">Idaho</option>
-                <option value="IL">Illinois</option>
-                <option value="IN">Indiana</option>
-                <option value="IA">Iowa</option>
-                <option value="KS">Kansas</option>
-                <option value="KY">Kentucky</option>
-                <option value="LA">Louisiana</option>
-                <option value="ME">Maine</option>
-                <option value="MD">Maryland</option>
-                <option value="MA">Massachusetts</option>
-                <option value="MI">Michigan</option>
-                <option value="MN">Minnesota</option>
-                <option value="MS">Mississippi</option>
-                <option value="MO">Missouri</option>
-                <option value="MT">Montana</option>
-                <option value="NE">Nebraska</option>
-                <option value="NV">Nevada</option>
-                <option value="NH">New Hampshire</option>
-                <option value="NJ">New Jersey</option>
-                <option value="NM">New Mexico</option>
-                <option value="NY">New York</option>
-                <option value="NC">North Carolina</option>
-                <option value="ND">North Dakota</option>
-                <option value="OH">Ohio</option>
-                <option value="OK">Oklahoma</option>
-                <option value="OR">Oregon</option>
-                <option value="PA">Pennsylvania</option>
-                <option value="RI">Rhode Island</option>
-                <option value="SC">South Carolina</option>
-                <option value="SD">South Dakota</option>
-                <option value="TN">Tennessee</option>
-                <option value="TX">Texas</option>
-                <option value="UT">Utah</option>
-                <option value="VT">Vermont</option>
-                <option value="VA">Virginia</option>
-                <option value="WA">Washington</option>
-                <option value="WV">West Virginia</option>
-                <option value="WI">Wisconsin</option>
-                <option value="WY">Wyoming</option>
-                <option value="AS">American Samoa</option>
-              </optgroup>
-              <optgroup label="US Outlying Territories">
-                <option value="GU">Guam</option>
-                <option value="MP">Northern Mariana Islands</option>
-                <option value="PR">Puerto Rico</option>
-                <option value="UM">United States Minor Outlying Islands</option>
-                <option value="VI">Virgin Islands</option>
-              </optgroup>
-            </select><br>			
-            
-            <label for="zipcode">Zip Code:</label>
-            <input type="zip" id="zipcode" name="user_zipcode">
+        </fieldset>  <!-- User info  -->
 
-          </fieldset>  <!-- User info  -->
+        <fieldset id="newsletter_info">
 
-          <fieldset id="newsletter_info">
-
-            <legend id="newsletter">Newsletter</legend>
-            
-            <label>Select the newsletters you would like to recieve</label><br>
-              <input type="checkbox" id="html" value="newsletter_html" name="user_newsletter"><label>HTML News</label><br>
-              <input type="checkbox" id="css" value="newsletter_css" name="user_newsletter"><label>CSS News</label><br>
-              <input type="checkbox" id="java" value="newsletter_java" name="user_newsletter"><label>Javascript News</label><br>
-            
-              <label>Newsletter Format</label><br>
-              <input type="radio" id="html" value="html" name="user_nl_format">
-              <label for="html">HTML</label><br>
-              <input type="radio" id="text" value="text" name="user_nl_format">
-              <label for="text">Plain Text</label><br>
-
-            <label for="other_interests">Other topics you'd like to hear about</label>
-            <textarea id="other_interests" name="user_interests"></textarea>
-            
-          </fieldset> <!-- Newsletter info  -->
+          <legend id="newsletter">Newsletter</legend>
           
-          <button type="submit">Sign up</button>
-        </form>
-      </div> <!-- Form  -->
+          <label>Select the newsletters you would like to recieve</label><br>
+            <input type="checkbox" id="html_news" value="newsletter_html" name="user_newsletter"><label>HTML News</label><br>
+            <input type="checkbox" id="css_news" value="newsletter_css" name="user_newsletter"><label>CSS News</label><br>
+            <input type="checkbox" id="java_news" value="newsletter_java" name="user_newsletter"><label>Javascript News</label><br>
+          
+            <label>Newsletter Format</label><br>
+            <input type="radio" id="html" value="html" name="user_nl_format">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="text" value="text" name="user_nl_format">
+            <label for="text">Plain Text</label><br>
+
+          <label for="other_interests">Other topics you'd like to hear about</label>
+          <textarea id="other_interests" name="user_interests"></textarea>
+          
+        </fieldset> <!-- Newsletter info  -->
+        
+        <button type="submit">Sign up</button>
+      </form>
+    </div> <!-- Form  -->
 
     <footer>
         <p id="copyright">Copyright the Code Review</p>
     </footer>
 
-    </body>
+  </body>
 </html>
 
 
