@@ -79,22 +79,32 @@ input::placeholder {
   color: rgba(0,0,0,.3)
 }
 
+textarea::placeholder {
+  font-size: .95em;
+  font-style: italic;
+  color: rgba(0,0,0,.3)
+}
+
 input:focus,
 textarea:focus {
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(99, 99, 69);
   border: 2px navy solid;
   transition-duration: .3s;
 }
 
+#newsletter_info label {
+  padding: 18px 0;
+  margin: 18px 0;
+}
 input[type="checkbox"],
 input[type="radio"] {
   width: 24px;
   margin: 12px 0 28px;
 }
 
-#newsletter_info label {
-  padding: 18px 0;
-  margin: 18px 0;
+input[type="checkbox"]:first-of-type,
+#html {
+  margin-top: 28px;
 }
 
 input[type="checkbox"]:checked + label,
