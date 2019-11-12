@@ -112,7 +112,11 @@ input[type="radio"]:checked + label{
   font-weight: bold;
 }
 
-label{
+#zipcode {
+  width: 50%;
+}
+
+label {
   color: rgba(0,0,0,.5);
 }
 
